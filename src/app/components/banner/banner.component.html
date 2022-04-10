@@ -1,0 +1,28 @@
+<!-- ======= Banner Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center">
+  <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <img
+      src="../../../assets/APLogo.png"
+      alt=""
+      style="margin: 0 0 10px -7px; width: 200px"
+    />
+    <h1>{{ datos.nombre }} {{ datos.apellido }}</h1>
+    <p>
+      <span
+        class="typed"
+        data-typed-items="Designer, Developer, Freelancer, Photographer"
+        >{{ datos.profesion }}</span
+      >
+    </p>
+    <div class="social-links">
+      <a
+        *ngFor="let red of datos.redes"
+        [href]="red.url"
+        [class]="red.class"
+        target="_blank"
+        ><i class="bx {{ red.icon }}"></i
+      ></a>
+    </div>
+  </div>
+</section>
+<!-- End Banner -->

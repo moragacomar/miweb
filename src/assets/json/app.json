@@ -1,0 +1,129 @@
+{
+  "nombre": "Juan",
+  "apellido": "Moraga",
+  "edad": 35,
+  "nacionalidad": "Argentina",
+  "slogan": "Soy",
+  "nick": "moragacomar",
+  "direccion": "Pje. G de Babiano Juarez 130",
+  "provincia": "Catamarca",
+  "localidad": "San Fernando del Valle de Catamarca",
+  "telefono": "+54 9 (383) 421-4747",
+  "email": "poluxfc@gmail.com",
+  "web": "www.moraga.com.ar",
+  "profesion": "Desarrollador Web Full-Stack Jr",
+  "birthday": "29 May 1986",
+  "city": "Catamarca, Argentina",
+  "freelance": "Disponible",
+  "titulo": "Programador Web",
+  "lbldireccion": "Direccion",
+  "aboutxt1": "Hola, soy Juan Moraga, ¡Un placer conocerte!, desde que comencé este viaje como programador, hace ya más de 10 años, he tenido la suerte de haber trabajado de forma remota para varias empresas, como también eh podido colaborar con personas realmente talentosas para la creación de productos digitales, incluso algunos para uso comercial. Soy una persona tranquila, confiada, naturalmente curiosa y un trabajador incansable en búsqueda de mejorar mis habilidades, pero siempre dije; “Un problema a la vez”.",
+  "aboutxt2": "Como Desarrollador Full-Stack no conozco límites. Y cuando los encuentro lo cruzo sin dudarlo, yendo audazmente a lo desconocido para volver más ricos por él.",
+  "aboutxt3": "Puedo conjurar un sitio web de la nada a la existencia, completamente formado. No uso trucos, ni esto es magia. Me especializo en manipular el tejido mismo de la web, sus materias primas de HTML, CSS, JavaScript y SVG. Los servidores Linux me sirven, los dominios son mi dominio y los certificados son ciertos.",
+  "factxt1": "El trabajo que he hecho reside ahí fuera, en algún lugar del vasto espacio virtual de Internet.",
+  "habtxt1": "La web a veces puede ser indistinguible de la magia, pero tengo el conocimiento y la paciencia necesarios para hacer casi cualquier cosa.",
+  "frases": [
+    "\"La mayoría de los buenos programadores programan, no porque esperan que se les pague o por adulación por parte del público, sino porque es divertido programar.\" - Linus Torvalds",
+    "\"El problema de los programadores es que nunca se sabe lo que un programador está haciendo hasta que ya es demasiado tarde.\" - Seymour Cray",
+    "\"La gente piensa que la informática es el arte de genios, pero la verdadera realidad es lo contrario, sólo son mucha gente haciendo cosas que se acumulan unos sobre otros, como un muro de piedras mini.\" - Donald Knuth"
+  ],
+  "redes": [
+    {
+      "nombre": "Twitter",
+      "url": "https://twitter.com/moragacomar",
+      "logo": "",
+      "icon": "bxl-twitter",
+      "class": "twitter"
+    },
+    {
+      "nombre": "Facebook",
+      "url": "https://www.facebook.com/moragacomar",
+      "logo": "",
+      "icon": "bxl-facebook",
+      "class": "facebook"
+    },
+    {
+      "nombre": "Instagram",
+      "url": "https://www.instagram.com/moragacomar/",
+      "logo": "",
+      "icon": "bxl-instagram",
+      "class": "instagram"
+    },
+    {
+      "nombre": "Github",
+      "url": "https://github.com/moragacomar/",
+      "logo": "",
+      "icon": "bxl-skype",
+      "class": "google-plu"
+    },
+    {
+      "nombre": "Linkedin",
+      "url": "https://www.linkedin.com/in/moragacomar/",
+      "logo": "",
+      "icon": "bxl-linkedin",
+      "class": "linkedin"
+    }
+  ],
+  "menu": [
+    {
+      "nombre": "Inicio",
+      "icon": "bx-home",
+      "href": "#hero"
+    },
+    {
+      "nombre": "Biografia",
+      "icon": "bx-user",
+      "href": "#about"
+    },
+    {
+      "nombre": "Resume",
+      "icon": "bx-file-blank",
+      "href": "#resume"
+    },
+    {
+      "nombre": "Portfolio",
+      "icon": "bx-book-content",
+      "href": "#portfolio"
+    },
+    {
+      "nombre": "Services",
+      "icon": "bx-server",
+      "href": "#services"
+    },
+    {
+      "nombre": "Contact",
+      "icon": "bx-envelope",
+      "href": "#contact"
+    }
+  ],
+  "secciones": {
+    "about": "Acerca de mi",
+    "facts": "Datos",
+    "skills": "Habilidades",
+    "services": "Servicios",
+    "testimonials": "Testimonios",
+    "contact": "Contacto"
+  },
+  "about1": [
+    { "label": "Cumpleaños:", "data": "29 May 1986" },
+    { "label": "Sitio Web:", "data": "www.moraga.com.ar" },
+    { "label": "Telefono:", "data": "+54 9 (383) 421-4747" },
+    { "label": "Ciudad:", "data": "Catamarca, Argentina" }
+  ],
+  "about2": [
+    { "label": "Edad:", "data": 35 },
+    { "label": "Titulo:", "data": "Programador Web" },
+    { "label": "Email:", "data": "info@moraga.com.ar" },
+    { "label": "Freelance:", "data": "Disponible" }
+  ],
+  "skills1": [
+    { "lang": "HTML", "value": "90%" },
+    { "lang": "CSS", "value": "70%" },
+    { "lang": "JAVASCRIPT", "value": "50%" }
+  ],
+  "skills2": [
+    { "lang": "PHP", "value": "50%" },
+    { "lang": "WORDPRESS/CMS", "value": "75%" },
+    { "lang": "PHOTOSHOP", "value": "75%" }
+  ]
+}
