@@ -2,7 +2,7 @@
 <footer id="footer">
   <div class="container">
     <h3>{{ datos.nombre }} {{ datos.apellido }}</h3>
-    <p>{{ datos.frases[Math.floor(Math.random() * datos.frases?.length)] }}</p>
+    <p>{{ datos.frases[numero] }}</p>
     <div class="social-links">
       <a
         *ngFor="let red of datos.redes"

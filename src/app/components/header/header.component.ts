@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,32 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() datos: any = '';
-  constructor() {}
 
+  constructor(private renderer: Renderer2) {}
+
+  abierto: boolean = false;
+
+  abrir(event: Event) {
+    if (this.abierto) {
+      this.renderer.addClass(document.body, 'mobile-nav-active');
+      this.renderer.removeClass(event.target, 'bi-list');
+      this.renderer.addClass(event.target, 'bi-x');
+      this.renderer.setStyle(
+        document.querySelector('.navbar'),
+        'display',
+        'block'
+      );
+    } else {
+      this.renderer.removeClass(document.body, 'mobile-nav-active');
+      this.renderer.addClass(event.target, 'bi-list');
+      this.renderer.removeClass(event.target, 'bi-x');
+      this.renderer.setStyle(
+        document.querySelector('.navbar'),
+        'display',
+        'flex'
+      );
+    }
+    this.abierto = !this.abierto;
+  }
   ngOnInit(): void {}
 }

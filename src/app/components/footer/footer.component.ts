@@ -1,4 +1,3 @@
-import { dashCaseToCamelCase } from '@angular/compiler/src/util';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -8,8 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   @Input() datos: any = '';
-  numero: number = Math.floor(Math.random() * this.datos.frases?.length);
   Math = Math;
+  numero: number = 0;
+
   constructor() {}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.numero = Math.floor(Math.random() * this.datos.frases?.length);
+  }
 }
