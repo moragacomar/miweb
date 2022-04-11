@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ServicesComponent implements OnInit {
   @Input() datos: any = '';
+  @Input() 'data-aos-delay': any = '';
+  @Input() d!: any;
   constructor() {}
 
   ngOnInit(): void {}

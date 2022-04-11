@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private renderer: Renderer2) {}
 
-  abierto: boolean = false;
+  abierto: boolean = true;
 
   abrir(event: Event) {
     if (this.abierto) {
