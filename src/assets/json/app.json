@@ -17,7 +17,7 @@
     "Desarrollador Web Full-Stack Trainne",
     "Freelancer"
   ],
-  "birthday": "29 May 1986",
+  "birthday": "29 Mayo 1986",
   "city": "Catamarca, Argentina",
   "freelance": "Disponible",
   "titulo": "Programador Web",
@@ -197,22 +197,22 @@
       "lblresume": "Resumen",
       "nombre": "Juan Moraga",
       "desc": "Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.",
-      "infopersonal": ["Portland par 127,Orlando, FL", "(123) 456-7891", "alice.barkley@example.com"]
+      "infopersonal": ["Catamarca - Argentina", "+54 9 (383) 421-4747", "info@moraga.com.ar"]
     },
     "education": {
       "lbleducation": "Educación",
       "myeducation": [
         {
-          "titulo": "MASTER OF FINE ARTS & GRAPHIC DESIGN",
-          "fechas": "2015 - 2016",
-          "lugar": "Rochester Institute of Technology, Rochester, NY",
+          "titulo": "Técnico Universitario en Redes y Telecomunicaciones",
+          "fechas": "2006 – 2010",
+          "lugar": "Instituto Tecnológico Universitario – UNCUYO",
           "detalles": "Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend"
         },
         {
-          "titulo": "BACHELOR OF FINE ARTS & GRAPHIC DESIGN",
-          "fechas": "2010 - 2014",
-          "lugar": "Rochester Institute of Technology, Rochester, NY",
-          "detalles": "Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila"
+          "titulo": "Diplomado en Educación PolimodalColegio Polimodal N° 2 – \"JORGE NEWBERY\"",
+          "fechas": "1999 – 2003",
+          "lugar": "Colegio Polimodal N° 2 – \"JORGE NEWBERY\" – Catamarca",
+          "detalles": "Modalidad: \"Economía y Gestión de las Organizaciones\""
         }
       ]
     },
