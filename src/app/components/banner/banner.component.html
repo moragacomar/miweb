@@ -7,9 +7,7 @@
       <span class="typed">{{ datos.profesion }}</span>
     </p>
     <div class="social-links">
-      <a *ngFor="let red of datos.redes" [href]="red.url" [class]="red.class" target="_blank"
-        ><i class="bx {{ red.icon }}"></i
-      ></a>
+      <a *ngFor="let red of datos.redes" [href]="red.url" target="_blank"><i class="bx {{ red.icon }}"></i></a>
     </div>
   </div>
 </section>
