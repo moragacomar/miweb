@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core'
+import { ObtenerdatosService } from 'src/app/services/obtenerdatos.service'
 
 @Component({
   selector: 'app-services',
@@ -6,10 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./services.component.css'],
 })
 export class ServicesComponent implements OnInit {
-  @Input() datos: any = '';
-  @Input() 'data-aos-delay': any = '';
-  @Input() d!: any;
-  constructor() {}
+  datos: any
+  @Input() 'data-aos-delay': any = ''
+  @Input() d!: any
+  constructor(private datosPortfolio: ObtenerdatosService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe((data) => {
+      this.datos = data[0]
+    })
+  }
 }

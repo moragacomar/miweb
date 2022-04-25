@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core'
+import { ObtenerdatosService } from 'src/app/services/obtenerdatos.service'
 
 @Component({
   selector: 'app-footer',
@@ -6,12 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-  @Input() datos: any = '';
-  Math = Math;
-  numero: number = 0;
+  datos: any
+  Math = Math
+  numero: number = 0
 
-  constructor() {}
+  constructor(private datosPortfolio: ObtenerdatosService) {}
   ngOnInit(): void {
-    this.numero = Math.floor(Math.random() * this.datos.frases?.length);
+    this.datosPortfolio.obtenerDatos().subscribe((data) => {
+      this.datos = data[0]
+      this.numero = Math.floor(Math.random() * this.datos.frases?.length)
+    })
   }
 }

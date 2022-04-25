@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import datos from 'src/assets/json/app.json';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,5 @@ import datos from 'src/assets/json/app.json';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'miweb';
-  Datos: any = datos;
+  title = 'miweb'
 }

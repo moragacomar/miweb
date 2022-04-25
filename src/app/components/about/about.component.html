@@ -2,27 +2,23 @@
 <section id="about" class="about">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
-      <h2>{{ datos.secciones.about }}</h2>
-      <p style="text-align: justify">{{ datos.aboutxt1 }}</p>
+      <h2>{{ datos?.secciones.about }}</h2>
+      <p style="text-align: justify">{{ datos?.aboutxt1 }}</p>
     </div>
 
     <div class="row">
       <div class="col-lg-4">
-        <img
-          src="assets/img/profile-img.jpg"
-          class="img-fluid"
-          alt="Imagen Porfolio"
-        />
+        <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Imagen Porfolio" />
       </div>
       <div class="col-lg-8 pt-4 pt-lg-0 content">
-        <h3>{{ datos.titulo }}</h3>
+        <h3>{{ datos?.titulo }}</h3>
         <p class="fst-italic" style="text-align: justify">
-          {{ datos.aboutxt2 }}
+          {{ datos?.aboutxt2 }}
         </p>
         <div class="row">
           <div class="col-lg-6">
             <ul>
-              <li *ngFor="let info of datos.about1">
+              <li *ngFor="let info of datos?.about1">
                 <i class="bi bi-chevron-right"></i>
                 <strong>{{ info.label }}</strong> <span>{{ info.data }}</span>
               </li>
@@ -30,14 +26,14 @@
           </div>
           <div class="col-lg-6">
             <ul>
-              <li *ngFor="let info of datos.about2">
+              <li *ngFor="let info of datos?.about2">
                 <i class="bi bi-chevron-right"></i>
                 <strong>{{ info.label }}</strong> <span>{{ info.data }}</span>
               </li>
             </ul>
           </div>
         </div>
-        <p style="text-align: justify">{{ datos.aboutxt3 }}</p>
+        <p style="text-align: justify">{{ datos?.aboutxt3 }}</p>
       </div>
     </div>
   </div>

@@ -1,11 +1,11 @@
 <!-- ======= Mobile nav toggle button ======= -->
 <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-<i (click)="abrir($event)" class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<i (click)="abrir($event)" class="bi bi-list mobile-nav-toggle d-lg-none"></i>
 <!-- ======= Header ======= -->
 <header id="header" class="d-flex flex-column justify-content-center">
   <nav id="navbar" class="navbar nav-menu">
     <ul>
-      <li *ngFor="let item of datos.menu">
+      <li *ngFor="let item of datos?.menu">
         <a href="{{ item.href }}" class="nav-link scrollto">
           <i class="bx {{ item.icon }}"></i><span>{{ item.nombre }}</span>
         </a>

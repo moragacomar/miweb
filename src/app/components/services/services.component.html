@@ -2,14 +2,14 @@
 <section id="services" class="services">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
-      <h2>{{ datos.secciones.services }}</h2>
+      <h2>{{ datos?.secciones.services }}</h2>
       <p>
-        {{ datos.servicios.info }}
+        {{ datos?.servicios.info }}
       </p>
     </div>
     <div class="row">
       <div
-        *ngFor="let serv of datos.servicios.servicio; index as i"
+        *ngFor="let serv of datos?.servicios.servicio; index as i"
         ngClass="{{ i === 1 ? 'mt-4 mt-md-0' : i === 2 ? 'mt-4 mt-lg-0' : i > 2 ? 'mt-4' : '' }}"
         class="col-lg-4 col-md-6 d-flex align-items-stretch"
         data-aos="zoom-in"

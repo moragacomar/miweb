@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { ObtenerdatosService } from 'src/app/services/obtenerdatos.service'
 
 @Component({
   selector: 'app-resume',
@@ -6,8 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./resume.component.css'],
 })
 export class ResumeComponent implements OnInit {
-  @Input() datos: any = '';
-  constructor() {}
-
-  ngOnInit(): void {}
+  datos: any
+  constructor(private datosPortfolio: ObtenerdatosService) {}
+  ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe((data) => {
+      this.datos = data[0]
+    })
+  }
 }

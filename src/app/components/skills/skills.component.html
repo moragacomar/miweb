@@ -2,35 +2,27 @@
 <section id="skills" class="skills section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
-      <h2>{{ datos.secciones.skills }}</h2>
-      <p style="text-align: center">{{ datos.habtxt1 }}</p>
+      <h2>{{ datos?.secciones.skills }}</h2>
+      <p style="text-align: center">{{ datos?.habtxt1 }}</p>
     </div>
     <div class="row skills-content">
       <div class="col-lg-6">
-        <div class="progress" *ngFor="let lang of datos.skills1">
+        <div class="progress" *ngFor="let lang of datos?.skills1">
           <span class="skill"
             >{{ lang.lang }} <i class="val">{{ lang.value }}</i></span
           >
           <div class="progress-bar-wrap">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              [ngStyle]="{ width: lang.value }"
-            ></div>
+            <div class="progress-bar" role="progressbar" [ngStyle]="{ width: lang.value }"></div>
           </div>
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="progress" *ngFor="let lang of datos.skills2">
+        <div class="progress" *ngFor="let lang of datos?.skills2">
           <span class="skill"
             >{{ lang.lang }} <i class="val">{{ lang.value }}</i></span
           >
           <div class="progress-bar-wrap">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              [ngStyle]="{ width: lang.value }"
-            ></div>
+            <div class="progress-bar" role="progressbar" [ngStyle]="{ width: lang.value }"></div>
           </div>
         </div>
       </div>

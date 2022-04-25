@@ -1,10 +1,10 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="container">
-    <h3>{{ datos.nombre }} {{ datos.apellido }}</h3>
-    <p>{{ datos.frases[numero] }}</p>
+    <h3>{{ datos?.nombre }} {{ datos?.apellido }}</h3>
+    <p>{{ datos?.frases[numero] }}</p>
     <div class="social-links">
-      <a *ngFor="let red of datos.redes" [href]="red.url" target="_blank"><i class="bx {{ red.icon }}"></i></a>
+      <a *ngFor="let red of datos?.redes" [href]="red.url" target="_blank"><i class="bx {{ red.icon }}"></i></a>
     </div>
     <div class="copyright">
       &copy; Copyright <strong> <span>MyResume</span></strong

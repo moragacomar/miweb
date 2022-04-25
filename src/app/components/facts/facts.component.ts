@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import PureCounter from '@srexi/purecounterjs';
+import { Component, OnInit } from '@angular/core'
+import PureCounter from '@srexi/purecounterjs'
+import { ObtenerdatosService } from 'src/app/services/obtenerdatos.service'
 
 @Component({
   selector: 'app-facts',
@@ -7,9 +8,12 @@ import PureCounter from '@srexi/purecounterjs';
   styleUrls: ['./facts.component.css'],
 })
 export class FactsComponent implements OnInit {
-  @Input() datos: any = '';
-  constructor() {}
+  datos: any
+  constructor(private datosPortfolio: ObtenerdatosService) {}
   ngOnInit(): void {
-    new PureCounter();
+    this.datosPortfolio.obtenerDatos().subscribe((data) => {
+      this.datos = data[0]
+      new PureCounter()
+    })
   }
 }
